@@ -1,0 +1,111 @@
+[
+    {
+      "id": 1,
+      "estate_title": "Luxurious Beachfront Villa",
+      "segment_name": "Luxury",
+      "description": "Experience the epitome of luxury living with this stunning beachfront villa. Featuring panoramic ocean views, private pool, and modern amenities.",
+      "price": "$5,000,000",
+      "status": "sale",
+      "area": "5000 sqft",
+      "location": "Malibu, California",
+      "facilities": ["Private beach access", "Infinity pool", "Spa", "Gym"],
+      "image": "beachfront_villa.jpg"
+    },
+    {
+      "id": 2,
+      "estate_title": "Luxury Penthouse in Manhattan",
+      "segment_name": "Luxury",
+      "description": "Live in the lap of luxury in this exquisite penthouse located in the heart of Manhattan. Enjoy breathtaking views of the city skyline.",
+      "price": "$10,000/month",
+      "status": "rent",
+      "area": "3000 sqft",
+      "location": "New York, NY",
+      "facilities": ["Private terrace", "Concierge service", "Fitness center", "Valet parking"],
+      "image": "manhattan_penthouse.jpg"
+    },
+    {
+      "id": 3,
+      "estate_title": "Luxury Mountain Retreat",
+      "segment_name": "Luxury",
+      "description": "Escape to this secluded mountain retreat nestled in the serene wilderness. Experience ultimate relaxation and tranquility.",
+      "price": "$3,500,000",
+      "status": "sale",
+      "area": "7000 sqft",
+      "location": "Aspen, Colorado",
+      "facilities": ["Ski-in/ski-out access", "Outdoor hot tub", "Home theater", "Wine cellar"],
+      "image": "mountain_retreat.jpg"
+    },
+    {
+      "id": 4,
+      "estate_title": "Luxury Waterfront Mansion",
+      "segment_name": "Luxury",
+      "description": "Indulge in luxury living with this expansive waterfront mansion. Boasting lavish interiors and stunning waterfront views.",
+      "price": "$15,000,000",
+      "status": "sale",
+      "area": "10000 sqft",
+      "location": "Miami Beach, Florida",
+      "facilities": ["Private dock", "Tennis court", "Infinity pool", "Guest house"],
+      "image": "waterfront_mansion.jpg"
+    },
+    {
+        "id": 5,
+        "estate_title": "Luxury Lakeside Retreat",
+        "segment_name": "Luxury",
+        "description": "Experience serenity at its finest with this luxurious lakeside retreat. Surrounded by pristine nature and stunning lake views.",
+        "price": "$4,200,000",
+        "status": "sale",
+        "area": "6000 sqft",
+        "location": "Lake Tahoe, California",
+        "facilities": ["Private boat dock", "Outdoor fireplace", "Home automation system", "Wine cellar"],
+        "image": "lakeside_retreat.jpg"
+      },
+      {
+        "id": 6,
+        "estate_title": "Luxury Vineyard Estate",
+        "segment_name": "Luxury",
+        "description": "Own a piece of paradise with this exquisite vineyard estate. Enjoy the beauty of rolling vineyards and luxurious amenities.",
+        "price": "$7,500,000",
+        "status": "sale",
+        "area": "8000 sqft",
+        "location": "Napa Valley, California",
+        "facilities": ["Private wine cellar", "Infinity pool", "Guest cottage", "Tennis court"],
+        "image": "vineyard_estate.jpg"
+      },
+      {
+        "id": 7,
+        "estate_title": "Luxury Desert Oasis",
+        "segment_name": "Luxury",
+        "description": "Escape to the desert and indulge in luxury with this stunning oasis. Experience breathtaking sunsets and unparalleled tranquility.",
+        "price": "$6,800,000",
+        "status": "sale",
+        "area": "5500 sqft",
+        "location": "Scottsdale, Arizona",
+        "facilities": ["Outdoor kitchen", "Private spa", "Home theater", "Putting green"],
+        "image": "desert_oasis.jpg"
+      },
+      {
+        "id": 8,
+        "estate_title": "Luxury Coastal Estate",
+        "segment_name": "Luxury",
+        "description": "Live the coastal dream with this magnificent estate overlooking the ocean. Enjoy coastal living at its finest.",
+        "price": "$12,000,000",
+        "status": "sale",
+        "area": "9000 sqft",
+        "location": "Santa Barbara, California",
+        "facilities": ["Private beach access", "Infinity pool", "Gourmet kitchen", "Fitness center"],
+        "image": "coastal_estate.jpg"
+      },
+      {
+        "id": 9,
+        "estate_title": "Luxury Ski Chalet",
+        "segment_name": "Luxury",
+        "description": "Ski-in/ski-out from this stunning luxury chalet nestled in the mountains. Enjoy world-class skiing and cozy alpine living.",
+        "price": "$9,200,000",
+        "status": "sale",
+        "area": "7500 sqft",
+        "location": "Whistler, British Columbia",
+        "facilities": ["Private sauna", "Home theater", "Ski equipment room", "Outdoor hot tub"],
+        "image": "ski_chalet.jpg"
+      }
+  ]
+  
