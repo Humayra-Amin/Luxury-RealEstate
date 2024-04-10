@@ -13,7 +13,9 @@ const Home = () => {
             </Helmet>
 
             <Banner></Banner>
+           <div>
             <Properties></Properties>
+           </div>
         </div>
     );
 };

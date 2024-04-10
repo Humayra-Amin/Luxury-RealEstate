@@ -25,7 +25,7 @@ const Estates = ({ estate }) => {
                         <p className="">Price: <span className="text-red-500 text-xl">{price}</span></p>
                     </div>
 
-                    <Link to="/estatedetails">
+                    <Link to={`/estate/${id}`}>
                         <button className="btn btn-primary text-white hover:bg-white hover:text-black hover:border-blue-500">View Details</button>
                     </Link>
                 </div>
