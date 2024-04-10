@@ -9,7 +9,7 @@
       "area": "5000 sqft",
       "location": "Malibu, California",
       "facilities": ["Private beach access", "Infinity pool", "Spa", "Gym"],
-      "image": "beachfront_villa.jpg"
+      "image": "https://i.ibb.co/XLhGcSj/beachfront-villa.jpg"
     },
     {
       "id": 2,
@@ -21,7 +21,7 @@
       "area": "3000 sqft",
       "location": "New York, NY",
       "facilities": ["Private terrace", "Concierge service", "Fitness center", "Valet parking"],
-      "image": "manhattan_penthouse.jpg"
+      "image": "https://i.ibb.co/52FK5Mt/manhattan-penthouse.jpg"
     },
     {
       "id": 3,
@@ -33,7 +33,7 @@
       "area": "7000 sqft",
       "location": "Aspen, Colorado",
       "facilities": ["Ski-in/ski-out access", "Outdoor hot tub", "Home theater", "Wine cellar"],
-      "image": "mountain_retreat.jpg"
+      "image": "https://i.ibb.co/YdW3vGN/mountain-retreat.webp"
     },
     {
       "id": 4,
@@ -45,7 +45,7 @@
       "area": "10000 sqft",
       "location": "Miami Beach, Florida",
       "facilities": ["Private dock", "Tennis court", "Infinity pool", "Guest house"],
-      "image": "waterfront_mansion.jpg"
+      "image": "https://i.ibb.co/82f2f1Y/waterfront-mansion.jpg"
     },
     {
         "id": 5,
@@ -57,7 +57,7 @@
         "area": "6000 sqft",
         "location": "Lake Tahoe, California",
         "facilities": ["Private boat dock", "Outdoor fireplace", "Home automation system", "Wine cellar"],
-        "image": "lakeside_retreat.jpg"
+        "image": "https://i.ibb.co/Xbh7SRN/lakeside-retreat.jpg"
       },
       {
         "id": 6,
@@ -69,7 +69,7 @@
         "area": "8000 sqft",
         "location": "Napa Valley, California",
         "facilities": ["Private wine cellar", "Infinity pool", "Guest cottage", "Tennis court"],
-        "image": "vineyard_estate.jpg"
+        "image": "https://i.ibb.co/bLD3Mhy/vineyard-estate.jpg"
       },
       {
         "id": 7,
@@ -81,7 +81,7 @@
         "area": "5500 sqft",
         "location": "Scottsdale, Arizona",
         "facilities": ["Outdoor kitchen", "Private spa", "Home theater", "Putting green"],
-        "image": "desert_oasis.jpg"
+        "image": "https://i.ibb.co/fGpQ19R/desert-oasis.jpg"
       },
       {
         "id": 8,
@@ -93,7 +93,7 @@
         "area": "9000 sqft",
         "location": "Santa Barbara, California",
         "facilities": ["Private beach access", "Infinity pool", "Gourmet kitchen", "Fitness center"],
-        "image": "coastal_estate.jpg"
+        "image": "https://i.ibb.co/z6MMfLg/coastal-estate.jpg"
       },
       {
         "id": 9,
@@ -105,7 +105,7 @@
         "area": "7500 sqft",
         "location": "Whistler, British Columbia",
         "facilities": ["Private sauna", "Home theater", "Ski equipment room", "Outdoor hot tub"],
-        "image": "ski_chalet.jpg"
+        "image": "https://i.ibb.co/MhXwBj6/ski-chalet.jpg"
       }
   ]
   
