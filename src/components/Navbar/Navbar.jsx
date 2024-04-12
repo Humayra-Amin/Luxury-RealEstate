@@ -46,18 +46,18 @@ const Navbar = () => {
                         user?.email ? <div className="dropdown dropdown-end ml-44">
                             <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar ml-[-150px] lg:ml-[0px] md:ml-[0px]">
                                 <div className="w-10 rounded-full">
-                                    <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                                    <img alt="Tailwind CSS Navbar component" src={user?.photoURL || "https://i.ibb.co/BV0NHW2/pics.jpg"} />
                                 </div>
                             </div>
 
                             <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
 
                                 <li>
-                                    <button className="btn btn-sm btn-ghost">User</button>
+                                    <button className="btn btn-sm btn-ghost">{user?.displayName || 'Not found'}</button>
                                 </li>
 
                                 <li>
-                                    <button onClick={logout} className="btn btn-sm btn-ghost">Logout</button>
+                                    <button onClick={logout} className="btn btn-sm btn-ghost">LOGOUT</button>
                                 </li>
 
                             </ul>

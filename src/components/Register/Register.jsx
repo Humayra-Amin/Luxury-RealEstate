@@ -6,7 +6,7 @@ import { FaEnvelope, FaLink, FaLock, FaUser } from "react-icons/fa";
 
 const Register = () => {
 
-    const { createUser } = useAuth();
+    const { createUser, updateUserProfile } = useAuth();
 
     const {
         register,
@@ -22,13 +22,15 @@ const Register = () => {
 
 
     const onSubmit = (data) => {
-        const { email, password } = data;
+        const { email, password, imageURL, fullname } = data;
         createUser(email, password)
-        .then((result) => {
-            if (result.user) {
-                navigate(from);
-            }
-        });
+            .then((result) => {
+                updateUserProfile(fullname, imageURL)
+                    .then(() => {
+                        navigate(from);
+                    })
+
+            });
     }
 
     return (
@@ -50,7 +52,7 @@ const Register = () => {
                                 </div>
 
                                 {errors.FullName && <span className="text-red-500">This field is required</span>}
-                                
+
                             </div>
 
 
@@ -76,7 +78,7 @@ const Register = () => {
                                 </label>
 
                                 <div className="relative">
-                                    <input type="text" placeholder="image url" {...register("imageurl")} className="input input-bordered pl-10 w-full" />
+                                    <input type="text" placeholder="imageURL" {...register("imageURL")} className="input input-bordered pl-10 w-full" />
                                     <FaLink className="absolute top-1/2 left-3 transform -translate-y-1/2 h-6 text-gray-500"></FaLink>
                                 </div>
 
@@ -89,7 +91,7 @@ const Register = () => {
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                
+
                                 <div className="relative">
                                     <input type="password" placeholder="password" {...register("password", { required: true })} className="input input-bordered pl-10 w-full" />
                                     <FaLock className="absolute top-1/2 left-3 transform -translate-y-1/2 h-6 text-gray-500"></FaLock>

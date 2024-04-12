@@ -16,6 +16,7 @@ import AuthProvider from './AuthProvider/AuthProvider';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute';
+// import UpdateProfile from './components/UpdateProfile/UpdateProfile';
 
 const router = createBrowserRouter([
   {
@@ -45,7 +46,11 @@ const router = createBrowserRouter([
           <EstateDetails></EstateDetails>
         </ProtectedRoute>,
         loader: () => fetch('/estate.json')
-      }
+      },
+      // {
+      //   path: '/userprofile',
+      //   element: <UpdateProfile></UpdateProfile>,
+      // },
     ]
   },
 ]);
