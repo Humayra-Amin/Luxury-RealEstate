@@ -1,18 +1,34 @@
 import { FaGoogle, FaGithub } from "react-icons/fa";
 import useAuth from "../../hooks/useAuth";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Sociallogin = () => {
 
-    const { googleLogin } = useAuth();
+    const { googleLogin, githubLogin } = useAuth();
+
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const from = location?.state || '/';
+
+
+    const handleSocialLogin = socialProvider => {
+        socialProvider().then((result) => {
+                if (result.user) {
+                    navigate(from);
+                }
+            });
+    };
+
     return (
         <div>
             <div className="divider">Sign Up With</div>
 
             <div className="mt-6 text-2xl flex flex-row lg:flex-row md:flex-row items-center justify-center gap-10">
 
-                <FaGoogle onClick={() => googleLogin()}></FaGoogle>
+                <FaGoogle onClick={() => handleSocialLogin(googleLogin)}></FaGoogle>
 
-                <FaGithub></FaGithub>
+                <FaGithub onClick={() => handleSocialLogin(githubLogin)}></FaGithub>
 
             </div>
 

@@ -15,6 +15,7 @@ import EstateDetails from './components/EstateDetails/EstateDetails';
 import AuthProvider from './AuthProvider/AuthProvider';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
+import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute';
 
 const router = createBrowserRouter([
   {
@@ -40,7 +41,9 @@ const router = createBrowserRouter([
       },
       {
         path: '/estate/:id',
-        element: <EstateDetails></EstateDetails>,
+        element: <ProtectedRoute> 
+          <EstateDetails></EstateDetails>
+        </ProtectedRoute>,
         loader: () => fetch('/estate.json')
       }
     ]

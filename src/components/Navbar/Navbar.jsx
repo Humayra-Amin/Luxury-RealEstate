@@ -1,7 +1,10 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from '../../assets/images/logo.jpg'
+import useAuth from "../../hooks/useAuth";
 
 const Navbar = () => {
+
+    const { logout, user } = useAuth();
 
     const links = <>
         <li><NavLink to="/" className={({ isActive }) =>
@@ -28,7 +31,7 @@ const Navbar = () => {
                     </div>
 
                     <div className="flex-1">
-                        <img src={logo} alt="" className="lg:ml-0 ml-2 w-[500px] lg:w-[200px] md:w-[200px]" />
+                        <Link to='/'><img src={logo} alt="" className="lg:ml-0 ml-2 w-[500px] lg:w-[200px] md:w-[200px]" /></Link>
                     </div>
 
                 </div>
@@ -39,17 +42,33 @@ const Navbar = () => {
                 </div>
                 <div className="flex-none gap-2">
 
-                    <div className="dropdown dropdown-end ml-44">
-                        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar ml-[-150px] lg:ml-[0px] md:ml-[0px]">
-                            <div className="w-10 rounded-full">
-                                <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                    {
+                        user?.email ? <div className="dropdown dropdown-end ml-44">
+                            <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar ml-[-150px] lg:ml-[0px] md:ml-[0px]">
+                                <div className="w-10 rounded-full">
+                                    <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                                </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <Link to="/login" className="form-control">
-                        <button className="btn bg-blue-500 text-white ml-[-100px] lg:ml-[0px] md:ml-[0px]">LOGIN</button>
-                    </Link>
+                            <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+
+                                <li>
+                                    <button className="btn btn-sm btn-ghost">User</button>
+                                </li>
+
+                                <li>
+                                    <button onClick={logout} className="btn btn-sm btn-ghost">Logout</button>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                            :
+                            <Link to="/login" className="form-control">
+                                <button className="btn bg-blue-500 text-white ml-[-100px] lg:ml-[0px] md:ml-[0px]">LOGIN</button>
+                            </Link>
+                    }
+
 
                 </div>
 
