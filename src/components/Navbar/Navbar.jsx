@@ -11,7 +11,7 @@ const Navbar = () => {
             isActive ? 'text-blue-500 border-2 border-blue-500' : 'text-black'}>Home</NavLink></li>
         <li><NavLink to="/properties" className={({ isActive }) =>
             isActive ? 'text-blue-500 border-2 border-blue-500' : 'text-black'}>Properties</NavLink></li>
-        <li><NavLink to="/about" className={({ isActive }) =>
+        <li><NavLink to="/aboutus" className={({ isActive }) =>
             isActive ? 'text-blue-500 border-2 border-blue-500' : 'text-black'}>About</NavLink></li>
         <li><NavLink to="/userprofile" className={({ isActive }) =>
             isActive ? 'text-blue-500 border-2 border-blue-500' : 'text-black'}>User Profile</NavLink></li>
@@ -65,7 +65,7 @@ const Navbar = () => {
                         </div>
                             :
                             <Link to="/login" className="form-control">
-                                <button className="btn bg-blue-500 text-white ml-[-100px] lg:ml-[0px] md:ml-[0px]">LOGIN</button>
+                                <button className="btn bg-blue-500 text-white ml-[20px] lg:ml-[0px] md:ml-[0px]">LOGIN</button>
                             </Link>
                     }
 

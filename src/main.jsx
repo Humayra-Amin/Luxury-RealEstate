@@ -16,6 +16,7 @@ import AuthProvider from './AuthProvider/AuthProvider';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute';
+import AboutUs from './components/AboutUs/AboutUs';
 // import UpdateProfile from './components/UpdateProfile/UpdateProfile';
 
 const router = createBrowserRouter([
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: '/register',
         element: <Register></Register>,
+      },
+      {
+        path: '/aboutus',
+        element: <AboutUs></AboutUs>,
       },
       {
         path: '/estate/:id',

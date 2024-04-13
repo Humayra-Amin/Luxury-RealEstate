@@ -17,14 +17,14 @@ const Properties = () => {
             .then(data => setProperty(data));
     })
     return (
-        <div>
+        <div className="font-roboto">
                 <Helmet>
                     <title>LuXeHome | Properties</title>
                     <link rel="icon" type="image/jpg" href="/src/assets/images/luxicon.jpg" />
                 </Helmet>
                 
             <div className="container mx-auto w-10/12 lg:w-4/5">
-                <div className="text-center my-16">
+                <div className="text-center my-10">
                     <h2 className="text-4xl lg:text-4xl font-semibold mt-8 lg:mt-6">Provided Properties</h2>
                 </div>
                 <Swiper

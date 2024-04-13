@@ -21,8 +21,8 @@ const Sociallogin = () => {
     };
 
     return (
-        <div>
-            <div className="divider">Sign Up With</div>
+        <div className="font-roboto">
+            <div className="divider font-sedan">Sign Up With</div>
 
             <div className="mt-6 text-2xl flex flex-row lg:flex-row md:flex-row items-center justify-center gap-10">
 

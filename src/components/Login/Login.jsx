@@ -33,7 +33,7 @@ const Login = () => {
     }
 
     return (
-        <div>
+        <div className="font-roboto">
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content">
                     <div className="card shrink-0 mb-14 md:w-[500px] lg:w-[500px] shadow-2xl bg-base-100">
