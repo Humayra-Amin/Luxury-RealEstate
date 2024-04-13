@@ -18,6 +18,9 @@ import Register from './components/Register/Register';
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute';
 import AboutUs from './components/AboutUs/AboutUs';
 // import UpdateProfile from './components/UpdateProfile/UpdateProfile';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
 
 const router = createBrowserRouter([
   {

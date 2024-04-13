@@ -4,8 +4,9 @@ LuXe Home
 
 # Live Site URL
 
-Firebase URL: https://a9-luxury-real-estate.web.app
-Netlify URL: https://a9-luxury-real-estate.netlify.app
+- Firebase URL: https://a9-luxury-real-estate.web.app
+
+- Netlify URL: https://a9-luxury-real-estate.netlify.app
 
 
 # Features and Characteristics
@@ -23,7 +24,11 @@ Netlify URL: https://a9-luxury-real-estate.netlify.app
 
  - React Hook form: https://react-hook-form.com/
 
- - React-leaflet: https://react-leaflet.js.org/
+ - AOS Package: https://www.npmjs.com/package/aos
+
+                https://github.com/michalsnik/aos
+
+                https://michalsnik.github.io/aos/
 
 
 # React + Vite
