@@ -5,6 +5,7 @@ import useAuth from "../../hooks/useAuth";
 import { FaEnvelope, FaLock } from "react-icons/fa";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useState } from "react";
 
 const Login = () => {
 
@@ -28,22 +29,29 @@ const Login = () => {
         signInUser(email, password)
             .then((result) => {
                 if (result.user) {
-                    navigate(from);
+                    // navigate(from);
+                    toast.success('Login successfully!!!')
+                    setTimeout(() => {
+                        navigate(from);
+                    }, 1000);
                 }
             })
             .catch((error) => {
-                toast.error("Invalid Email or Password")
+                console.error(error);
+                toast.error("Invalid Email or Password!!!");
             })
     }
 
 
     return (
         <div className="font-roboto">
-            <div className="hero min-h-screen bg-base-200">
+            <div className="hero min-h-screen">
                 <div className="hero-content">
-                    <div className="card shrink-0 mb-14 md:w-[500px] lg:w-[500px] shadow-2xl bg-base-100">
+                    <div className="card shrink-0 mb-14 md:w-[500px] lg:w-[500px] border-2 bg-base-100">
 
                         <form onSubmit={handleSubmit(onSubmit)} className="card-body">
+
+                            <h1 className="flex justify-center text-xl lg:text-3xl text-blue-500">Login</h1>
 
                             <div className="form-control">
 
@@ -82,7 +90,7 @@ const Login = () => {
 
 
                             <label className="label text-[16px] font-medium text-gray-400">
-                                Don’t have an account yet? <Link to="/register" className="label-text-alt link link-hover text-[16px] font-medium text-blue-600 underline">Sign Up</Link>
+                                Don’t have an account yet? <Link to="/register" className="label-text-alt link link-hover text-[16px] font-medium text-blue-600 underline font-sedan">Sign Up</Link>
                             </label>
 
                             <Sociallogin></Sociallogin>
