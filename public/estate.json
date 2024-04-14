@@ -9,7 +9,7 @@
       "area": "5000 sqft",
       "location": "Malibu, California",
       "facilities": ["Private beach access", "Infinity pool", "Spa", "Gym"],
-      "image": "https://i.ibb.co/XLhGcSj/beachfront-villa.jpg"
+      "image": "https://i.ibb.co/WPXr3Kh/beachfront-villa.jpg"
     },
     {
       "id": 2,
@@ -21,7 +21,7 @@
       "area": "3000 sqft",
       "location": "New York, NY",
       "facilities": ["Private terrace", "Concierge service", "Fitness center", "Valet parking"],
-      "image": "https://i.ibb.co/52FK5Mt/manhattan-penthouse.jpg"
+      "image": "https://i.ibb.co/WtTCJbG/manhattan-penthouse.jpg"
     },
     {
       "id": 3,
@@ -57,7 +57,7 @@
         "area": "6000 sqft",
         "location": "Lake Tahoe, California",
         "facilities": ["Private boat dock", "Outdoor fireplace", "Home automation system", "Wine cellar"],
-        "image": "https://i.ibb.co/Xbh7SRN/lakeside-retreat.jpg"
+        "image": "https://i.ibb.co/q74qN9z/lakeside-retreat.jpg"
       },
       {
         "id": 6,
@@ -69,7 +69,7 @@
         "area": "8000 sqft",
         "location": "Napa Valley, California",
         "facilities": ["Private wine cellar", "Infinity pool", "Guest cottage", "Tennis court"],
-        "image": "https://i.ibb.co/bLD3Mhy/vineyard-estate.jpg"
+        "image": "https://i.ibb.co/74w2z09/vineyard-estate.webp"
       },
       {
         "id": 7,
@@ -81,7 +81,7 @@
         "area": "5500 sqft",
         "location": "Scottsdale, Arizona",
         "facilities": ["Outdoor kitchen", "Private spa", "Home theater", "Putting green"],
-        "image": "https://i.ibb.co/fGpQ19R/desert-oasis.jpg"
+        "image": "https://i.ibb.co/QQ1gTXg/desert-oasis.jpg"
       },
       {
         "id": 8,
@@ -93,7 +93,7 @@
         "area": "9000 sqft",
         "location": "Santa Barbara, California",
         "facilities": ["Private beach access", "Infinity pool", "Gourmet kitchen", "Fitness center"],
-        "image": "https://i.ibb.co/z6MMfLg/coastal-estate.jpg"
+        "image": "https://i.ibb.co/Ch8gF8z/coastal-estate.webp"
       },
       {
         "id": 9,
@@ -105,7 +105,7 @@
         "area": "7500 sqft",
         "location": "Whistler, British Columbia",
         "facilities": ["Private sauna", "Home theater", "Ski equipment room", "Outdoor hot tub"],
-        "image": "https://i.ibb.co/MhXwBj6/ski-chalet.jpg"
+        "image": "https://i.ibb.co/mSP3h0x/ski-chalet.jpg"
       }
   ]
   
