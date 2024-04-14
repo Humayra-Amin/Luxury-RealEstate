@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Sociallogin from "../Sociallogin/Sociallogin";
 import useAuth from "../../hooks/useAuth";
-import { FaEnvelope, FaLock } from "react-icons/fa";
+import { FaEnvelope, FaEye, FaEyeSlash, FaLock } from "react-icons/fa";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useState } from "react";
@@ -10,6 +10,9 @@ import { useState } from "react";
 const Login = () => {
 
     const { signInUser } = useAuth();
+
+    const [showLoginPass, setShowLoginPass] = useState(false);
+
 
     const {
         register,
@@ -61,7 +64,7 @@ const Login = () => {
 
                                 <div className="relative">
                                     <input type="email" placeholder="email" {...register("email", { required: true })} className="input input-bordered pl-10 w-full" />
-                                    <FaEnvelope className="absolute top-1/2 left-3 transform -translate-y-1/2 h-6 text-gray-500"></FaEnvelope>
+                                    <FaEnvelope className="absolute top-1/2 left-3 transform -translate-y-1/2 h-6 text-blue-300"></FaEnvelope>
                                 </div>
 
                                 {errors.Email && <span className="text-red-500">This field is required</span>}
@@ -75,8 +78,16 @@ const Login = () => {
                                 </label>
 
                                 <div className="relative">
-                                    <input type="password" placeholder="password" {...register("password", { required: true })} className="input input-bordered pl-10 w-full" />
-                                    <FaLock className="absolute top-1/2 left-3 transform -translate-y-1/2 h-6 text-gray-500"></FaLock>
+                                    <input type={showLoginPass ? "text" : "password"}
+                                        placeholder="password"
+                                        {...register("password", { required: true })}
+                                        className="input input-bordered pl-10 w-full" />
+                                    <span onClick={() => setShowLoginPass(!showLoginPass)} className="absolute top-7 right-3 transform -translate-y-1/2 h-6 text-xl text-blue-500">
+                                        {
+                                            showLoginPass ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>
+                                        }
+                                    </span>
+                                    <FaLock className="absolute top-1/2 left-3 transform -translate-y-1/2 h-6 text-blue-300"></FaLock>
                                 </div>
 
                                 {errors.Password && <span className="text-red-500">This field is required</span>}
