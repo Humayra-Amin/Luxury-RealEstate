@@ -13,8 +13,10 @@ const Navbar = () => {
             isActive ? 'text-blue-500 border-2 border-blue-500' : 'text-black'}>Properties</NavLink></li>
         <li><NavLink to="/aboutus" className={({ isActive }) =>
             isActive ? 'text-blue-500 border-2 border-blue-500' : 'text-black'}>About</NavLink></li>
-        <li><NavLink to="/userprofile" className={({ isActive }) =>
-            isActive ? 'text-blue-500 border-2 border-blue-500' : 'text-black'}>User Profile</NavLink></li>
+        <li><NavLink to="/updateprofile" className={({ isActive }) =>
+            isActive ? 'text-blue-500 border-2 border-blue-500' : 'text-black'}>Update Profile</NavLink></li>
+        {user && <li><NavLink to="/userprofile" className={({ isActive }) =>
+            isActive ? 'text-blue-500 border-2 border-blue-500' : 'text-black'}>User Profile</NavLink></li>}
     </>
 
     return (

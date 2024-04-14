@@ -6,7 +6,7 @@ import { FaEnvelope, FaLink, FaLock, FaUser } from "react-icons/fa";
 
 const Register = () => {
 
-    const { createUser, updateUserProfile } = useAuth();
+    const { createUser } = useAuth();
 
     const {
         register,
@@ -18,19 +18,17 @@ const Register = () => {
     const navigate = useNavigate();
     const location = useLocation();
 
-    const from = location?.state || '/';
+    const from = location.state || '/';
 
 
     const onSubmit = (data) => {
-        const { email, password, imageURL, fullname } = data;
+        const { email, password} = data;
         createUser(email, password)
-            .then((result) => {
-                updateUserProfile(fullname, imageURL)
-                    .then(() => {
-                        navigate(from);
-                    })
-
-            });
+        .then((result) => {
+            if (result.user) {
+                navigate(from);
+            }
+        });
     }
 
     return (
@@ -51,7 +49,7 @@ const Register = () => {
                                     <FaUser className="absolute top-1/2 left-3 transform -translate-y-1/2 h-6 text-gray-500"></FaUser>
                                 </div>
 
-                                {errors.FullName && <span className="text-red-500">This field is required</span>}
+                                {errors.fullname && <span className="text-red-500">This field is required</span>}
 
                             </div>
 
@@ -67,7 +65,7 @@ const Register = () => {
                                     <FaEnvelope className="absolute top-1/2 left-3 transform -translate-y-1/2 h-6 text-gray-500"></FaEnvelope>
                                 </div>
 
-                                {errors.Email && <span className="text-red-500">This field is required</span>}
+                                {errors.email && <span className="text-red-500">This field is required</span>}
 
                             </div>
 
@@ -78,11 +76,11 @@ const Register = () => {
                                 </label>
 
                                 <div className="relative">
-                                    <input type="text" placeholder="imageURL" {...register("imageURL")} className="input input-bordered pl-10 w-full" />
+                                    <input type="text" placeholder="imageURL" {...register("imageURL", { required: true })} className="input input-bordered pl-10 w-full" />
                                     <FaLink className="absolute top-1/2 left-3 transform -translate-y-1/2 h-6 text-gray-500"></FaLink>
                                 </div>
 
-                                {errors.ImageURL && <span className="text-red-500">This field is required</span>}
+                                {errors.imageURL && <span className="text-red-500">This field is required</span>}
 
                             </div>
 
@@ -97,7 +95,7 @@ const Register = () => {
                                     <FaLock className="absolute top-1/2 left-3 transform -translate-y-1/2 h-6 text-gray-500"></FaLock>
                                 </div>
 
-                                {errors.Password && <span className="text-red-500">This field is required</span>}
+                                {errors.password && <span className="text-red-500">This field is required</span>}
 
                             </div>
 

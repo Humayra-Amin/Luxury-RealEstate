@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-// import App from './App.jsx'
 import './index.css'
 import {
   createBrowserRouter,
@@ -17,9 +16,10 @@ import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute';
 import AboutUs from './components/AboutUs/AboutUs';
-// import UpdateProfile from './components/UpdateProfile/UpdateProfile';
+import UpdateProfile from './components/UpdateProfile/UpdateProfile';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
+import UserProfile from './components/UserProfile/UserProfile';
 AOS.init();
 
 const router = createBrowserRouter([
@@ -55,10 +55,14 @@ const router = createBrowserRouter([
         </ProtectedRoute>,
         loader: () => fetch('/estate.json')
       },
-      // {
-      //   path: '/userprofile',
-      //   element: <UpdateProfile></UpdateProfile>,
-      // },
+      {
+        path: '/updateprofile',
+        element: <UpdateProfile></UpdateProfile>,
+      },
+      {
+        path: '/userprofile',
+        element: <UserProfile></UserProfile>,
+      },
     ]
   },
 ]);

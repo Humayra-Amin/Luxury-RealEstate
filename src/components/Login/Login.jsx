@@ -3,6 +3,8 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import Sociallogin from "../Sociallogin/Sociallogin";
 import useAuth from "../../hooks/useAuth";
 import { FaEnvelope, FaLock } from "react-icons/fa";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
 
@@ -16,7 +18,7 @@ const Login = () => {
 
     const navigate = useNavigate();
     const location = useLocation();
-
+    // console.log(location);
     const from = location?.state || '/';
 
 
@@ -29,8 +31,12 @@ const Login = () => {
                 if (result.user) {
                     navigate(from);
                 }
-            });
+            })
+            .catch((error) => {
+                toast.error("Invalid Email or Password")
+            })
     }
+
 
     return (
         <div className="font-roboto">
@@ -77,7 +83,7 @@ const Login = () => {
 
 
                             <label className="label text-[16px] font-medium text-gray-400">
-                                Don’t have an account yet? <Link to="/register" className="label-text-alt link link-hover text-[16px] font-medium text-blue-600">Sign Up</Link>
+                                Don’t have an account yet? <Link to="/register" className="label-text-alt link link-hover text-[16px] font-medium text-blue-600 underline">Sign Up</Link>
                             </label>
 
                             <Sociallogin></Sociallogin>
@@ -87,6 +93,7 @@ const Login = () => {
                     </div>
                 </div>
             </div>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };
