@@ -1,4 +1,4 @@
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import Sociallogin from "../Sociallogin/Sociallogin";
 import useAuth from "../../hooks/useAuth";
@@ -7,7 +7,7 @@ import { useState } from "react";
 
 const Register = () => {
 
-    const { createUser } = useAuth();
+    const { createUser, updateUserProfile } = useAuth();
 
     const [registerError, setRegisterError] = useState('');
     const [success, setSuccess] = useState('');
@@ -21,13 +21,12 @@ const Register = () => {
 
 
     const navigate = useNavigate();
-    const location = useLocation();
 
-    const from = location.state || '/';
+    const from = '/';
 
     const onSubmit = (data) => {
 
-        const { email, password } = data;
+        const { email, password, fullname, imageURL } = data;
 
         setRegisterError('');
         setSuccess('');
@@ -44,14 +43,18 @@ const Register = () => {
         }
 
         createUser(email, password)
-            .then((result) => {
-                if (result.user) {
-                    // navigate(from);
-                    setSuccess('User created successfully')
-                    setTimeout(() => {
-                        navigate(from);
-                    }, 1000);
-                }
+            .then(() => {
+                updateUserProfile(fullname, imageURL)
+                .then(() => {
+                
+                        // navigate(from);
+                        setSuccess('User created successfully')
+                        setTimeout(() => {
+                            navigate(from);
+                        }, 1000);
+                    
+                })
+
             })
             .catch((error) => {
                 console.error(error);

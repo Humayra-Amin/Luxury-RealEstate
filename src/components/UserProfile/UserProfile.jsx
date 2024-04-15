@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import useAuth from "../../hooks/useAuth";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const UserProfile = () => {
 
@@ -27,8 +28,14 @@ const UserProfile = () => {
     return (
 
         <div className="container mx-auto w-10/12 lg:w-4/5 text-center my-16 text-xl">
-                    <h1 className="text-3xl md:text-4xl font-bold text-center mb-6 font-roboto border-2 lg:p-4 bg-blue-400 text-white">User Information</h1>
-                    
+
+            <Helmet>
+                <title>LuXeHome | User Profile</title>
+                <link rel="icon" type="image/jpg" href="/src/assets/images/luxicon.jpg" />
+            </Helmet>
+
+            <h1 className="text-3xl md:text-4xl font-bold text-center mb-6 font-roboto border-2 lg:p-4 bg-blue-400 text-white">User Information</h1>
+
             {loggedIn ? (
 
                 <div className="card bg-base-100 shadow-xl border-2 lg:w-[600px] lg:ml-[300px]">

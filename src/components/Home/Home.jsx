@@ -7,6 +7,10 @@ const Home = () => {
     return (
         <div>
 
+            <Banner></Banner>
+            <Properties></Properties>
+            <About></About>
+
             <div>
                 <Helmet>
                     <title>LuXeHome | Home</title>
@@ -14,12 +18,6 @@ const Home = () => {
                 </Helmet>
             </div>
 
-            <Banner></Banner>
-            <div>
-                <Properties></Properties>
-            </div>
-
-            <About></About>
         </div>
     );
 };

@@ -1,9 +1,14 @@
+import { Helmet } from 'react-helmet-async';
 import contact from '../../assets/images/contact.jpg'
 import contact2 from '../../assets/images/contact2.jpg'
 
 const Contact = () => {
     return (
         <div>
+            <Helmet>
+                <title>LuXeHome | Contact</title>
+                <link rel="icon" type="image/jpg" href="/src/assets/images/luxicon.jpg" />
+            </Helmet>
             <div className="min-h-screen">
                 <div className="container mx-auto px-4 py-12">
                     <h1 className="text-3xl md:text-4xl font-bold text-center mb-8 font-roboto border-2 lg:p-4 bg-blue-400 text-white">Contact Us</h1>
@@ -26,11 +31,11 @@ const Contact = () => {
                                     <textarea id="message" name="message" rows="5" className="w-full mt-1 p-2 border border-gray-300 rounded-md"></textarea>
                                 </div>
                                 <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Send Message</button>
-                                
+
                                 <div>
                                     <p className='text-slate-500 mt-2'>Got a question? Need assistance? Contact our friendly team today!</p>
                                     <p className='text-slate-500'>Our team is here to help. Reach out to us anytime for assistance or inquiries.</p>
-                                    
+
                                     <img src={contact2} alt="" className='rounded-lg mt-2 h-[200px] w-[400px] md:h-[400px] md:w-auto lg:h-auto' />
                                 </div>
                             </form>
