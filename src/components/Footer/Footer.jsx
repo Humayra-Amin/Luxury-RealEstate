@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import logo from '../../assets/images/logo.jpg'
-import { FaChevronUp, FaFacebook, FaGoogle, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaChevronUp, FaFacebook, FaGoogle, FaInstagram, FaTwitter } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
 
@@ -36,7 +36,6 @@ const Footer = () => {
                         <p className='text-xl font-sedan font-semibold mt-4'>Contact Our Agency</p>
                         <div className='flex flex-row justify-evenly mt-6 text-2xl text-blue-600'>
                             <FaGoogle></FaGoogle>
-                            <FaYoutube></FaYoutube>
                             <FaTwitter></FaTwitter>
                             <FaInstagram></FaInstagram>
                             <FaFacebook></FaFacebook>
