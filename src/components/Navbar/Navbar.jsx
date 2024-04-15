@@ -9,10 +9,10 @@ const Navbar = () => {
     const links = <>
         <li><NavLink to="/" className={({ isActive }) =>
             isActive ? 'text-blue-500 border-2 border-blue-500' : 'text-black'}>Home</NavLink></li>
-        <li><NavLink to="/properties" className={({ isActive }) =>
-            isActive ? 'text-blue-500 border-2 border-blue-500' : 'text-black'}>Properties</NavLink></li>
         <li><NavLink to="/aboutus" className={({ isActive }) =>
             isActive ? 'text-blue-500 border-2 border-blue-500' : 'text-black'}>About</NavLink></li>
+        <li><NavLink to="/contact" className={({ isActive }) =>
+            isActive ? 'text-blue-500 border-2 border-blue-500' : 'text-black'}>Contact</NavLink></li>
         <li><NavLink to="/updateprofile" className={({ isActive }) =>
             isActive ? 'text-blue-500 border-2 border-blue-500' : 'text-black'}>Update Profile</NavLink></li>
         {user && <li><NavLink to="/userprofile" className={({ isActive }) =>

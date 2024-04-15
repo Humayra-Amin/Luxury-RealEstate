@@ -20,6 +20,7 @@ import UpdateProfile from './components/UpdateProfile/UpdateProfile';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import UserProfile from './components/UserProfile/UserProfile';
+import Contact from './components/Contact/Contact';
 AOS.init();
 
 const router = createBrowserRouter([
@@ -32,10 +33,10 @@ const router = createBrowserRouter([
         path: '/',
         element: <Home></Home>,
       },
-      {
-        path: '/properties',
-        element: <Properties></Properties>,
-      },
+      // {
+      //   path: '/properties',
+      //   element: <Properties></Properties>,
+      // },
       {
         path: '/login',
         element: <Login></Login>,
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
       {
         path: '/aboutus',
         element: <AboutUs></AboutUs>,
+      },
+      {
+        path: '/contact',
+        element: <Contact></Contact>,
       },
       {
         path: '/estate/:id',

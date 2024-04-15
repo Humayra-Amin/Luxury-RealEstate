@@ -13,7 +13,7 @@ const AboutUs = () => {
             </Helmet>
 
             <div className="text-center my-10">
-                <h2 className="text-4xl lg:text-4xl font-semibold">About Us</h2>
+                <h2 className="text-4xl lg:text-4xl font-semibold border-2 lg:p-4 bg-blue-400 text-white">About Us</h2>
             </div>
 
             <div className="container mx-auto w-10/12 lg:w-4/5 text-center my-10 text-xl">

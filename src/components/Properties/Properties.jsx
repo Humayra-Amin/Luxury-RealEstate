@@ -23,10 +23,11 @@ const Properties = () => {
                     <link rel="icon" type="image/jpg" href="/src/assets/images/luxicon.jpg" />
                 </Helmet>
                 
-            <div className="container mx-auto w-10/12 lg:w-4/5">
                 <div className="text-center my-10">
-                    <h2 className="text-4xl lg:text-4xl font-semibold mt-8 lg:mt-6">Provided Properties</h2>
+                    <h2 className="text-4xl lg:text-4xl font-semibold mt-[-150px] md:mt-[-80px] lg:mt-[-70px]">Provided Properties</h2>
                 </div>
+            <div className="container mx-auto w-10/12 lg:w-4/5">
+
                 <Swiper
                     slidesPerView={3}
                     spaceBetween={30}

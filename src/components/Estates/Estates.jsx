@@ -4,7 +4,7 @@ const Estates = ({ estate }) => {
     const { image, estate_title, price, area, location, facilities, id } = estate;
     return (
         <div>
-            <div className="card lg:w-96 bg-base-100 shadow-xl border-2">
+            <div className="card lg:w-96 bg-base-100 border-2">
                 <figure className="px-10 pt-10">
                     <img src={image} alt="" className="rounded-xl bg-[#F3F3F3] h-[230px] w-[350px] md:w-[700px] md:h-[300px]" />
                 </figure>

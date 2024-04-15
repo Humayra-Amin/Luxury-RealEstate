@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import logo from '../../assets/images/logo.jpg'
-import { FaChevronUp } from "react-icons/fa";
+import { FaChevronUp, FaFacebook, FaGoogle, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -28,10 +29,18 @@ const Footer = () => {
 
     return (
         <div>
-            <footer className="footer p-10 bg-slate-50 text-base-content mt-10">
+            <footer className="footer p-20 md:p-8 bg-slate-50 text-base-content mt-10">
                 <aside>
                     <div className="flex-1">
                         <img src={logo} alt="" className="lg:ml-0 ml-2 w-[500px] lg:w-[200px] md:w-[200px]" />
+                        <p className='text-xl font-sedan font-semibold mt-4'>Contact Our Agency</p>
+                        <div className='flex flex-row justify-evenly mt-6 text-2xl text-blue-600'>
+                            <FaGoogle></FaGoogle>
+                            <FaYoutube></FaYoutube>
+                            <FaTwitter></FaTwitter>
+                            <FaInstagram></FaInstagram>
+                            <FaFacebook></FaFacebook>
+                        </div>
                     </div>
                 </aside>
                 <nav>
@@ -43,7 +52,7 @@ const Footer = () => {
                 </nav>
                 <nav>
                     <h6 className="footer-title font-roboto text-[18px]">Company</h6>
-                    <a className="link link-hover font-sedan font-medium text-[17px]">About us</a>
+                    <Link to='/aboutus'><a className="link link-hover font-sedan font-medium text-[17px]">About us</a></Link>
                     <a className="link link-hover font-sedan font-medium text-[17px]">Contact</a>
                     <a className="link link-hover font-sedan font-medium text-[17px]">Our Team</a>
                     <a className="link link-hover font-sedan font-medium text-[17px]">Careers</a>
