@@ -43,7 +43,6 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="flex-none gap-2">
-
                     {
                         user?.email ? <div className="dropdown dropdown-end ml-44">
                             <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar ml-[-150px] lg:ml-[0px] md:ml-[0px]">
@@ -52,7 +51,7 @@ const Navbar = () => {
                                 </div>
                             </div>
 
-                            <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                            <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52 text-start">
 
                                 <li>
                                     <button className="btn btn-sm btn-ghost">{user?.displayName || 'Not found'}</button>

@@ -9,9 +9,10 @@ const Contact = () => {
                 <title>LuXeHome | Contact</title>
                 <link rel="icon" type="image/jpg" href="/src/assets/images/luxicon.jpg" />
             </Helmet>
-            <div className="min-h-screen">
-                <div className="container mx-auto px-4 py-12">
-                    <h1 className="text-3xl md:text-4xl font-bold text-center mb-8 font-roboto border-2 lg:p-4 bg-blue-400 text-white">Contact Us</h1>
+            <h1 className="text-3xl md:text-4xl font-bold text-center mb-6 font-roboto border-2 lg:p-4 bg-blue-400 text-white mt-[30px]">Contact</h1>  
+            <div>
+                <div className="container mx-auto">  
+                                    
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div data-aos="fade-right" data-aos-duration="1000" className="bg-white p-6 rounded-lg border-2">
                             <h2 className="text-2xl font-semibold mb-4 font-roboto">Send Us a Message</h2>
@@ -55,8 +56,8 @@ const Contact = () => {
                                 <li className="mb-2">
                                     <span className="font-semibold">Email:</span> LuXeHome@example.com
                                 </li>
-                                <p className='text-slate-500'>Our intuitive platform empowers you to explore a wide range of properties, from cozy apartments to luxurious villas, with ease. With our innovative geolocation mapping feature, you can effortlessly discover properties that match your criteria and connect directly with property owners. At WP Residence, we're more than just a real estate platform we're your trusted partners throughout your real estate journey. Our team brings a wealth of expertise to the table, guiding you through every step of the buying or selling process. From exploring the latest real estate trends to providing personalized insights, we're committed to helping you make informed decisions.
-                                    Whether you're a first-time home buyer or a seasoned investor, we're dedicated to providing exceptional service tailored to your unique needs. Get in touch with us today to start your journey towards finding your dream home or maximizing the potential of your property investment. We look forward to hearing from you!</p>
+                                <p className='text-slate-500'>Our intuitive platform empowers you to explore a wide range of properties, from cozy apartments to luxurious villas, with ease. With our innovative geolocation mapping feature, you can effortlessly discover properties that match your criteria and connect directly with property owners. At WP Residence, we are more than just a real estate platform we are your trusted partners throughout your real estate journey. Our team brings a wealth of expertise to the table, guiding you through every step of the buying or selling process. From exploring the latest real estate trends to providing personalized insights, we are committed to helping you make informed decisions.
+                                    Whether you are a first-time home buyer or a seasoned investor, we are dedicated to providing exceptional service tailored to your unique needs. Get in touch with us today to start your journey towards finding your dream home or maximizing the potential of your property investment. We look forward to hearing from you!</p>
                                 <div>
                                     <img src={contact} alt="" className='h-[200px] md:h-auto lg:h-auto mt-6 rounded-lg' />
                                 </div>

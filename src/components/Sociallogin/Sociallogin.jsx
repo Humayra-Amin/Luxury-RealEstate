@@ -24,7 +24,7 @@ const Sociallogin = () => {
 
     return (
         <div className="font-roboto">
-            <div className="divider font-sedan">Or Sign Up With</div>
+            <div className="divider font-sedan text-xl">OR</div>
 
             <div className="mt-6 text-2xl flex flex-row lg:flex-row md:flex-row items-center justify-center gap-10">
 

@@ -9,7 +9,6 @@ import Root from './components/Root/Root';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import Home from './components/Home/Home';
 import { HelmetProvider } from 'react-helmet-async';
-import Properties from './components/Properties/Properties';
 import EstateDetails from './components/EstateDetails/EstateDetails';
 import AuthProvider from './AuthProvider/AuthProvider';
 import Login from './components/Login/Login';
@@ -33,10 +32,6 @@ const router = createBrowserRouter([
         path: '/',
         element: <Home></Home>,
       },
-      // {
-      //   path: '/properties',
-      //   element: <Properties></Properties>,
-      // },
       {
         path: '/login',
         element: <Login></Login>,
