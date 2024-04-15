@@ -18,7 +18,7 @@ const AboutUs = () => {
 
             <div className="container mx-auto w-10/12 lg:w-4/5 text-center my-10 text-xl">
 
-                <div data-aos="fade-up" data-aos-duration="1000" className="card lg:card-side bg-base-100 shadow-xl">
+                <div data-aos="fade-up" data-aos-duration="1000" className="card lg:card-side bg-base-100 shadow-lg border-2">
                     <figure><img src={pics3} alt="Album" className="h-[200px] md:h-[500px] lg:w-[1800px] lg:h-[500px]" /></figure>
                     <div data-aos="fade-left" data-aos-duration="1000" className="card-body text-start">
                         <h2 className="text-3xl font-bold text-center">Our Story</h2>
@@ -28,7 +28,7 @@ const AboutUs = () => {
                     </div>
                 </div>
 
-                <div data-aos="fade-up" data-aos-duration="1000" className="card lg:card-side bg-base-100 shadow-xl mt-14">
+                <div data-aos="fade-up" data-aos-duration="1000" className="card lg:card-side bg-base-100 shadow-lg border-2 mt-14">
                     <div data-aos="fade-right" data-aos-duration="1000" className="card-body text-start">
                         <h2 className="text-3xl font-bold text-center">Our Mission and Vision</h2>
                         <p className="text-[16px] md:text-xl lg:text-xl font-sedan">Our mission at Luxury Estates is to empower our clients to make informed decisions and achieve their real estate aspirations with confidence. We strive to provide exceptional service, deliver outstanding results, and exceed expectations at every turn.</p>
@@ -38,7 +38,7 @@ const AboutUs = () => {
                     <figure><img src={pics2} alt="Album" className="h-[200px] md:h-[500px] lg:w-[1800px] lg:h-[500px]" /></figure>
                 </div>
 
-                <div data-aos="fade-up" data-aos-duration="1000" className="card lg:card-side bg-base-100 shadow-xl mt-14">
+                <div data-aos="fade-up" data-aos-duration="1000" className="card lg:card-side bg-base-100 shadow-lg border-2 mt-14">
                     <figure><img data-aos-duration="1000" src={pics1} alt="Album" className="h-[200px] md:h-[500px] lg:w-[2000px] lg:h-[500px]" /></figure>
                     <div data-aos="fade-left" className="card-body text-start">
                         <h2 className="text-3xl font-bold text-center">Our Philosophy</h2>

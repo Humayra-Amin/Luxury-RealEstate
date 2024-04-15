@@ -4,11 +4,11 @@ import contact2 from '../../assets/images/contact2.jpg'
 const Contact = () => {
     return (
         <div>
-            <div className="min-h-screen bg-gray-100">
+            <div className="min-h-screen">
                 <div className="container mx-auto px-4 py-12">
                     <h1 className="text-3xl md:text-4xl font-bold text-center mb-8 font-roboto border-2 lg:p-4 bg-blue-400 text-white">Contact Us</h1>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div data-aos="fade-right" data-aos-duration="1000" className="bg-white p-6 rounded-lg shadow-md">
+                        <div data-aos="fade-right" data-aos-duration="1000" className="bg-white p-6 rounded-lg border-2">
                             <h2 className="text-2xl font-semibold mb-4 font-roboto">Send Us a Message</h2>
 
                             <form>
@@ -38,7 +38,7 @@ const Contact = () => {
                         </div>
 
 
-                        <div data-aos="fade-left" data-aos-duration="1000" className="bg-white p-6 rounded-lg shadow-md">
+                        <div data-aos="fade-left" data-aos-duration="1000" className="bg-white p-6 rounded-lg border-2">
                             <h2 className="text-2xl font-semibold mb-4 font-roboto">LuXe Home Real Estate</h2>
                             <ul>
                                 <li className="mb-2">
