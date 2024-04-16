@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Helmet } from "react-helmet-async";
 import Estates from "../Estates/Estates";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
