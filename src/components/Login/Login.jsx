@@ -6,6 +6,7 @@ import { FaEnvelope, FaEye, FaEyeSlash, FaLock } from "react-icons/fa";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
 
@@ -48,6 +49,12 @@ const Login = () => {
 
     return (
         <div className="font-roboto">
+            
+            <Helmet>
+                <title>LuXeHome | Login</title>
+                <link rel="icon" type="image/jpg" href="/src/assets/images/luxicon.jpg" />
+            </Helmet>
+
             <div className="hero min-h-screen">
                 <div className="hero-content">
                     <div className="card shrink-0 mb-14 md:w-[500px] lg:w-[500px] border-2 bg-base-100">

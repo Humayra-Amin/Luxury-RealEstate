@@ -4,6 +4,7 @@ import Sociallogin from "../Sociallogin/Sociallogin";
 import useAuth from "../../hooks/useAuth";
 import { FaEnvelope, FaEye, FaEyeSlash, FaLink, FaLock, FaUser } from "react-icons/fa";
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 const Register = () => {
 
@@ -45,15 +46,15 @@ const Register = () => {
         createUser(email, password)
             .then(() => {
                 updateUserProfile(fullname, imageURL)
-                .then(() => {
-                
+                    .then(() => {
+
                         // navigate(from);
                         setSuccess('User created successfully')
                         setTimeout(() => {
                             navigate(from);
                         }, 1000);
-                    
-                })
+
+                    })
 
             })
             .catch((error) => {
@@ -64,6 +65,11 @@ const Register = () => {
 
     return (
         <div className="font-roboto">
+
+            <Helmet>
+                <title>LuXeHome | Register</title>
+                <link rel="icon" type="image/jpg" href="/src/assets/images/luxicon.jpg" />
+            </Helmet>
 
             {
                 registerError && <p className="text-red-500 flex justify-center text-2xl font-sedan bg-red-200 shadow-lg p-6">{registerError}</p>
